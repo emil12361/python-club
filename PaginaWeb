@@ -1,0 +1,165 @@
+--index html
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goku - El Guerrero Saiyajin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1 class="titulo">🐉 Goku - El Guerrero Saiyajin 🐉</h1>
+    <p class="subtitulo">Fuerza, valentía y esperanza en cada batalla</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://i.pinimg.com/originals/d1/b4/20/d1b420e1821c8354b954fa0c6aef0486.jpg" alt="Goku" class="imagen-goku">
+  </section>
+
+  <main class="contenido">
+    <section class="biografia">
+      <h2>🌟 Biografía</h2>
+      <p>
+        Goku, nacido como Kakarotto, es un Saiyajin enviado a la Tierra que se convirtió
+        en uno de los héroes más poderosos del universo. Con su espíritu amable y su deseo
+        constante de mejorar, Goku ha salvado al mundo incontables veces.
+      </p>
+    </section>
+
+    <section class="habilidades">
+      <h2>⚔️ Habilidades</h2>
+      <ul>
+        <li>Super Saiyajin y transformaciones avanzadas</li>
+        <li>Kamehameha – su técnica de energía más famosa</li>
+        <li>Ultra Instinto – dominio del movimiento perfecto</li>
+      </ul>
+    </section>
+
+    <section class="datos">
+      <h2>📊 Datos de Goku</h2>
+      <div class="tarjeta">
+        <p><strong>Nombre real:</strong> Kakarotto</p>
+        <p><strong>Planeta natal:</strong> Vegeta</p>
+        <p><strong>Raza:</strong> Saiyajin</p>
+        <p><strong>Mentores:</strong> Maestro Roshi, Kaio-sama, Whis</p>
+        <p><strong>Meta:</strong> Ser el más fuerte sin perder la bondad</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>💙 Página creada con pasión por un fan de Dragon Ball 💙</p>
+  </footer>
+</body>
+</html>
+
+
+--style.css
+
+/* ---------- Estilos generales ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+  color: #0d47a1;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ---------- Encabezado ---------- */
+.encabezado {
+  background-color: #90caf9;
+  padding: 30px 40px;
+  text-align: left;
+  border-bottom: 4px solid #64b5f6;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 2.5em;
+  animation: colorChange 4s infinite alternate;
+}
+
+.subtitulo {
+  color: #1565c0;
+  font-weight: 500;
+  animation: colorChange 5s infinite alternate;
+}
+
+/* ---------- Sección de imagen (hero) ---------- */
+.hero {
+  width: 100%;
+  background: #bbdefb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0; 
+}
+
+.imagen-goku {
+  width: 45%;           
+  max-width: 500px;     
+  height: auto;         
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
+  display: block;
+}
+
+
+
+/* ---------- Contenido principal ---------- */
+.contenido {
+  padding: 40px 60px;
+  background-color: #ffffff;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
+}
+
+/* ---------- Secciones ---------- */
+.biografia, .habilidades, .datos {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #0d47a1;
+  font-size: 1.8em;
+  border-left: 6px solid #64b5f6;
+  padding-left: 10px;
+  animation: colorChange 6s infinite alternate;
+}
+
+/* ---------- Lista ---------- */
+ul {
+  list-style-type: square;
+  color: #0d47a1;
+  margin-left: 30px;
+}
+
+/* ---------- Tarjeta de datos ---------- */
+.tarjeta {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  text-align: center;
+  background-color: #90caf9;
+  padding: 20px;
+  color: #0d47a1;
+  font-weight: bold;
+  border-top: 3px solid #64b5f6;
+}
+
+/* ---------- Animación de color ---------- */
+@keyframes colorChange {
+  0% { color: #0d47a1; }
+  50% { color: #42a5f5; }
+  100% { color: #1e88e5; }
+}
